@@ -55,7 +55,7 @@ beli(money, objIkan,
                             function (change) {
                                 beli(change, objBuah, 
                                     function (change) {
-                                        console.log(`Sisa uang sekarang adalah ${change}`);
+                                        console.log(`Sisa uang untuk beli bahan makanan adalah ${change}`);
                                     }
                                 );
                             }
@@ -67,12 +67,12 @@ beli(money, objIkan,
     }
 );
 
-//uncomment to see beli() runs asynchronously
+// uncomment to see two of beli() methods runs asynchronously
 // beli(otherMoney, objPanci, 
 //     function (change) {
 //         beli(change, objKompor, 
 //             function (change) {
-//                 console.log(`Sisa uang sekarang adalah ${change}`);
+//                 console.log(`Sisa uang untuk beli peralatan adalah ${change}`);
 //             }
 //         );
 //     }
