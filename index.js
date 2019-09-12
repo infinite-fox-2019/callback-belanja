@@ -38,13 +38,21 @@ let mobilSedan = {
     waktu : 1000
 }
 
+let permen = {
+    item : "permen mentos",
+    harga : 100,
+    waktu : 1000
+}
+
 beli(uang, aqua,function(kembalian){
     beli(kembalian, bengBeng, function(kembalian){
         beli(kembalian, chitos, function(kembalian){
             beli(kembalian, pringles, function(kembalian){
                 beli(kembalian, tanggo, function(kembalian){
                     beli(kembalian, mobilSedan, function(kembalian){
+                        beli(kembalian, permen, function(kembalian){
                         
+                        })
                     })
                 })
             })

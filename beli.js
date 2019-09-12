@@ -8,7 +8,7 @@ function beli(uang, obj, cb){
     }else{
       console.log(`uang gk cukup nih buat beli ${obj.item} kembaliannya cuma ${uang}`)
       console.log(`saya dimarahi ama penjual`);
-      cb(0)
+      cb(uang)
     }
   }, obj.waktu);
 }
