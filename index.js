@@ -1,6 +1,6 @@
 const beli = require('./beli')
 
-let objBuyList = [
+const objBuyList = [
     {
         item: 'Baju',
         harga: 250000,
@@ -13,7 +13,7 @@ let objBuyList = [
     },
     {
         item: 'Buku',
-        harga: 50000,
+        harga: 500000,
         waktu: 1000
     },
     {
@@ -23,12 +23,12 @@ let objBuyList = [
     },
     {
         item: 'Iphone',
-        harga: 1000000,
+        harga: 100000,
         waktu: 1000
     }
 ]
 
-beli(2600000, objBuyList[0], function(kembalian) {
+beli(600000, objBuyList[0], function(kembalian) {
     beli(kembalian, objBuyList[1], function(kembalian) {
         beli(kembalian, objBuyList[2], function(kembalian) {
             beli(kembalian, objBuyList[3], function(kembalian) {
