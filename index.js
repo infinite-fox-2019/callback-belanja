@@ -30,7 +30,20 @@ let objBuah = {
     waktu: 400
 }
 
+let objPanci = {
+    item: 'panci',
+    harga: 23000,
+    waktu: 400
+}
+
+let objKompor = {
+    item: 'kompor',
+    harga: 17000,
+    waktu: 400
+}
+
 let money = 75000;
+let otherMoney = 20000;
 
 beli(money, objIkan, 
     function (change) {
@@ -53,3 +66,14 @@ beli(money, objIkan,
         );
     }
 );
+
+//uncomment to see beli() runs asynchronously
+// beli(otherMoney, objPanci, 
+//     function (change) {
+//         beli(change, objKompor, 
+//             function (change) {
+//                 console.log(`Sisa uang sekarang adalah ${change}`);
+//             }
+//         );
+//     }
+// );
