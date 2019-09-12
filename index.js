@@ -3,7 +3,7 @@ const beli = require('./beli')
 const items = [
     {
         item: 'ayam',
-        harga: 30000, 
+        harga: 15000, 
         waktu: 1000
     },
     {
@@ -28,9 +28,13 @@ const items = [
     }
 ]
 
-beli(50000, items[0], function (uang) {
+  beli(50000, items[0], function (uang) {
     beli(uang, items[1], function (uang) {
         beli(uang, items[2], function (uang) {
+            beli(uang, items[3], function(uang) {
+                beli(uang, items[4], function (uang) {
+                })
+            })
         })
     })
   })
