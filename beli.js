@@ -1,15 +1,15 @@
-function beli(uang, obj, cb){
-  console.log(`Saya pergi membeli ${obj.item}`)
+function beli(uang, objItem, cb){
+  console.log(`Saya pergi membeli ${objItem.item}`)
   setTimeout(function(){
-    let kembalian = uang - obj.harga
+    let kembalian = uang - objItem.harga
     if (kembalian > 0) {
-      console.log(`Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`);
+      console.log(`Saya sudah membeli ${objItem.item} uang kembaliannya ${kembalian}`);
       cb(kembalian)
     }else{
-      console.log(`uang gk cukup nih buat beli ${obj.item} kembaliannya cuma ${kembalian}`);
-      cb(0)
+      console.log(`uang gk cukup nih buat beli ${objItem.item} kembaliannya cuma ${kembalian}`);
+      cb(uang)
     }
-  }, obj.waktu);
+  }, objItem.waktu);
 }
 
 module.exports = beli;
