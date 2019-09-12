@@ -33,7 +33,6 @@ const belanja = beli(uang,sayur,function(kembalian){
         beli(kembalian, beras, function(kembalian){
             beli(kembalian, daging, function(kembalian){
                 beli(kembalian, udang,function(kembalian){
-                    return ''
                 })
             })
         })
@@ -41,4 +40,4 @@ const belanja = beli(uang,sayur,function(kembalian){
 })
 
 
-console.log(belanja)
+belanja
