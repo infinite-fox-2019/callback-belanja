@@ -28,9 +28,9 @@ const items = [
     }
 ]
 
-beli(50000, items[0], function (parameter) {
-    beli(parameter, items[1], function (parameter) {
-        beli(parameter, items[2], function (parameter) {
+beli(50000, items[0], function (uang) {
+    beli(uang, items[1], function (uang) {
+        beli(uang, items[2], function (uang) {
         })
     })
   })
