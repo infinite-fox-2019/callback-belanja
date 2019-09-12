@@ -25,6 +25,11 @@ const udang = {
     harga: 20000,
     waktu: 200
 }
+const roti = {
+    item: 'roti',
+    harga: 19000,
+    waktu: 200
+}
 
 let uang = 50000
 
@@ -33,6 +38,8 @@ const belanja = beli(uang,sayur,function(kembalian){
         beli(kembalian, beras, function(kembalian){
             beli(kembalian, daging, function(kembalian){
                 beli(kembalian, udang,function(kembalian){
+                    beli(kembalian, roti,function(kembalian){
+                    })
                 })
             })
         })
